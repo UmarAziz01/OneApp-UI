@@ -15,3 +15,5 @@ const getEnvVar = (key: string, defaultValue: string): string => {
 };
 
 export const APP_NAME = getEnvVar('EXPO_PUBLIC_APP_NAME', 'App');
+export const COPYRIGHT_TEXT = getEnvVar('EXPO_PUBLIC_COPYRIGHT_TEXT', '© 2024 Your App');
+export const COPYRIGHT_URL = getEnvVar('EXPO_PUBLIC_COPYRIGHT_URL', '#');
