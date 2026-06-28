@@ -1,13 +1,16 @@
 {
   "expo": {
-    "name": "aziz",
-    "slug": "aziz",
+    "name": "App",
+    "slug": "slug-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIUserInterfaceStyle": "automatic"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -15,10 +18,17 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "userInterfaceStyle": "automatic"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-status-bar"
+    ],
+    "extra": {
+      "EXPO_PUBLIC_APP_NAME": "App"
     }
   }
 }
